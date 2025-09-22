@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RTG-Trading LTD</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <!-- ✅ Logo -->
+      <div class="logo">
+        <a href="#home">RTG-Trading</a>
+      </div>
+
+      <!-- ✅ Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- ✅ Hamburger Menu -->
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>RTG-Trading</h1>
+      <p>Your Trusted Import Partner</p>
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta">
+    <h2>Ready to Start Trading with Us?</h2>
+    <a href="#contact" class="btn">Get Started</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+       RTG-Trading group Import Company specializes in seamless global sourcing, logistics, and import solutions. Our mission is to simplify international trade with reliability and trust.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul class="services-list">
+      <li>🔹 Import & Export Logistics</li>
+      <li>🔹 Supplier Sourcing & Vetting</li>
+      <li>🔹 Customs Clearance Support</li>
+      <li>🔹 Global Shipping Solutions</li>
+    </ul>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section id="industries">
+    <h2>Industries We Serve</h2>
+    <ul class="industries-list">
+      <li>📦 Consumer Goods</li>
+      <li>👕 Textiles & Apparel</li>
+      <li>💡 Electronics & Components</li>
+      <li>⚙️ Industrial Equipment</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST" class="contact-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- ✅ Contact Info -->
+    <div class="contact-info">
+      <p>Email: info@rtgtrading.com</p>
+      <p>Phone: 01602378908</p>
+      <p>Location: Dhaka, Bangladesh</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 RTG-Trading LTD. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <!-- ✅ Small Script for Hamburger -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
